@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/etTaskTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/task_name" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/etTaskDesc"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.19"
+        android:ems="10"
+        android:hint="@string/hint_Enter_Description"
+        android:inputType="textMultiLine" />
+
+    <CheckBox
+        android:id="@+id/cckLocationalReminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hint_remind_me_when_near" />
+
+    <CheckBox
+        android:id="@+id/cckTimeReminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hint_time_reminder" />
+
+    <LinearLayout
+        android:id="@+id/add_task_bottom_buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="0dp"
+        android:alpha="0.8"
+        android:background="@color/svetlo_siva"
+        android:gravity="bottom|end"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnSaveNewTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|fill_vertical|center_horizontal|fill_horizontal|center"
+            android:text="@string/add_list" />
+    </LinearLayout>
+
+</LinearLayout>

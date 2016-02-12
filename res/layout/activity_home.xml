@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context=".HomeActivity" >
+
+    <LinearLayout
+        android:id="@+id/homeTopListSelect"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:gravity="top|center_vertical|center_horizontal|center"
+        android:orientation="horizontal" >
+
+        <Spinner
+            android:id="@+id/spinLists"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.34" />
+
+        <Button
+            android:id="@+id/btnAddList"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_list" />
+    </LinearLayout>
+    
+     <ListView
+         android:id="@+id/listView1"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/home_bottom_buttons"
+         android:layout_alignLeft="@+id/home_bottom_buttons"
+         android:layout_below="@id/homeTopListSelect"
+         android:layout_centerVertical="true" >
+
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/home_bottom_buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="0dp"
+        android:alpha="0.8"
+        android:background="@color/svetlo_siva"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnAddTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|fill_vertical|center_horizontal|fill_horizontal|center"
+            android:text="@string/add_list" />
+
+    </LinearLayout>
+
+   
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Reminder Ot Lite</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="add_list">+</string>
+    <string name="list_name">Title</string>
+    <string name="add_location_btn">Pick Location</string>
+    <string name="list_title_sugest">List Title</string>
+    <string name="task_name">Enter Task Name</string>
+    <string name="hint_remind_me_when_near">Remind me when near</string>
+    <string name="hint_time_reminder">Time Reminder</string>
+    <string name="hint_Enter_Description">Enter Description</string>
+
+</resources>
